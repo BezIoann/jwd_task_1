@@ -10,7 +10,7 @@ public class Solution {
         ArrayList<Double> result = new ArrayList<>();
         double fx;
         if (a > b) {
-            throw new Exception("The segment start greater that segment end!");
+            throw new Exception("The segment-start greater that segment-end!");
         }
         if (h < 0) {
             throw new Exception("Step should be positive number!!");
@@ -37,7 +37,6 @@ public class Solution {
             i++;
         }
 
-        System.out.println(result.toString());
     }
 
     public static void main(String[] args) {
@@ -55,7 +54,6 @@ public class Solution {
 
         try {
             result = calculateFunctionValues(a,b, h);
-
             showFunctionValues(a, b, h, result);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
